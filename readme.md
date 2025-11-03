@@ -1,4 +1,4 @@
-![logomark](./public/icon.png)
+![logomark](./public/fastkit_logo.png)
 # FastKIT
 ## This is a small and elegant PHP framework to accelerate the creation of websites and applications.
 
