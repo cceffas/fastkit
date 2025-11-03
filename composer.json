@@ -1,0 +1,23 @@
+{
+    "name": "devcefas/fastkit",
+    "autoload": {
+        "psr-4": {
+            "Fastkit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "devcefas",
+            "email": "devcefas@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^7.3",
+        "symfony/dotenv": "^7.3",
+        "twig/twig": "^3.22",
+        "phpmailer/phpmailer": "^7.0",
+        "catfan/medoo": "^2.2",
+        "respect/validation": "^2.4",
+        "illuminate/database": "^12.36"
+    }
+}
