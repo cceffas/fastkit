@@ -18,29 +18,19 @@ class Http
     {
 
 
-        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+
+        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 
-            $request = $_GET;
-            $action = $request['action'] ?? '';
-            $request['action'] = null;
+        if ($_SERVER['REQUEST_METHOD'] === 'GET' && $name === $uri) {
 
-            $request = array_filter($request);
-
-            if ($action === $name) {
-
-                $function($request);
-
-            }
-
+            $function();
             return;
-
 
         }
 
 
     }
-
 
     /**
      * Summary of post
@@ -88,6 +78,15 @@ class Http
     }
 
 
+    public static function view(string $name)
+    {
+
+        $host = $_SERVER;
+        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+        return $host;
+
+    }
 
     public static function action(string $name)
     {

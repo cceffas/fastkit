@@ -1,6 +1,9 @@
 {
     "name": "devcefas/fastkit",
     "autoload": {
+        "files": [
+            "config/core.php"
+        ],
         "psr-4": {
             "Fastkit\\": "src/"
         }
@@ -18,6 +21,7 @@
         "phpmailer/phpmailer": "^7.0",
         "catfan/medoo": "^2.2",
         "respect/validation": "^2.4",
-        "illuminate/database": "^12.36"
+        "illuminate/database": "^12.36",
+        "nvan/cli-plus": "^1.0"
     }
 }

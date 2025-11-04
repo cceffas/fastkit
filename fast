@@ -1,0 +1,16 @@
+<?php
+
+use Fastkit\libs\App;
+
+require_once "./vendor/autoload.php";
+
+array_shift($argv);
+
+$command = !empty($argv) ? $argv[0] : null;
+
+$app = new App($command);
+$app->start();
+
+
+
+
