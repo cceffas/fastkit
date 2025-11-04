@@ -16,3 +16,30 @@ start now
 composer install
 
 ```
+
+start serve
+
+```
+php fast serve
+
+```
+
+
+start code
+
+```php
+
+# routes/uri.php
+
+use Fastkit\libs\Http as Route;
+use Fastkit\libs\View;
+
+
+Route::get('/', function () {
+    
+   echo "hello world";
+
+});
+
+
+```
