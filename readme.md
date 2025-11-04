@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="./public/fastkit_logo.svg">
+<img src="./public/img/dark_fastkit_logo.svg">
 </p>
 
 <p align="center">
