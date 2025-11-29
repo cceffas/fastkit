@@ -1,2 +1,2 @@
-
+/*npx @tailwindcss/cli -i ./dist/app.css -o ./public/css/style.css --watch*/
 @import "tailwindcss";

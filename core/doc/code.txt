@@ -1,0 +1,15 @@
+
+# web/routes/app-route.php
+<?php
+use Fastkit\libs\Http;
+
+$routes = new Http();
+
+$routes->get('/', function(){
+
+    $data='hellow world';
+    return renderView('welcome',['text'=>$data]);
+    
+});
+
+$routes->start_routes();

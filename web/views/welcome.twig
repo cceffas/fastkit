@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/fastkit.css">
+		<link rel="stylesheet" href="assets/highlight/styles/a11y-dark.css">
+		<title>welcome</title>
+	</head>
+	<body class='relative flex items-center justify-center min-h-screen w-full bg-zinc-800  '>
+
+
+		<div class='flex flex-col items-center gap-16'>
+
+			<div class='flex flex-col items-center gap-4'>
+
+				<div class='flex items-center gap-1'>
+					<h1 class='text-3xl font-extrabold text-orange-500'>Fast</h1>
+					<h2 class='text-3xl text-white'>Kit</h2>
+				</div>
+
+				<p class='text-zinc-600 font-mono'>framework for jobs-php</p>
+
+
+				<div class='flex gap-2'>
+
+					<button class='px-8 py-2 rounded-md hover:bg-orange-600 active:bg-orange-300 bg-orange-500 text-white text-shadow-md cursor-pointer font-bold'>Learn on Document</button>
+					{# end #}
+
+					<button class='px-8 py-2 rounded-md hover:bg-zinc-600 active:bg-zinc-300 bg-zinc-500 text-white text-shadow-md cursor-pointer font-bold'>Github star</button>
+				</div>
+
+
+			</div>
+
+
+			<ul class='flex flex-wrap items-center justify-center gap-4 p-4'>
+				{% for card in cards %}
+
+					<li>
+
+						<div class='flex flex-col gap-2 transition-shadow delay-[0.4ms] ease-linear md:w-64  h-48 rounded-2xl bg-zinc-900 shadow-md hover:shadow-zinc-950 px-4 py-2'>
+
+							<div class="flex items-center  gap-2 w-full h-8 ">
+
+								<span class="size-3 rounded-full bg-green-500"></span>
+								<span class="size-3 rounded-full bg-yellow-500"></span>
+								<span class="size-3 rounded-full bg-red-500"></span>
+
+							</div>
+
+							<div class='flex flex-col gap-2'>
+								<h2 class='font-bold text-white'>{{card.title}}</h2>
+								<p class='text-zinc-600 italic'>{{card.descriction}}</p>
+							</div>
+
+
+						</div>
+
+					</li>
+
+
+				{% endfor %}
+			</ul>
+
+		</body>
+
+
+		<script src="assets/highlight/highlight.js"></script>
+
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

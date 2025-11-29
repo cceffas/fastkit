@@ -29,7 +29,7 @@ start code
 
 ```php
 
-# routes/uri.php
+# web/routes/uri.php
 
 use Fastkit\libs\Http as Route;
 use Fastkit\libs\View;

@@ -1,11 +1,11 @@
 {
-    "name": "devcefas/fastkit",
+    "name": "fastkit/framework",
     "autoload": {
         "files": [
-            "config/core.php"
+            "core/helpers/index.php"
         ],
         "psr-4": {
-            "Fastkit\\": "src/"
+            "Fastkit\\": "core/"
         }
     },
     "authors": [
